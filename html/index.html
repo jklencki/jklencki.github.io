@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Modeling a post-interaction binary &mdash; Modeling a post-interaction binary  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Modeling a post-interaction binary  documentation" href="index.html#"/>
+        <link rel="next" title="MESA@Konkoly – Massive Binaries" href="massive_binaries.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html#" class="icon icon-home"> Modeling a post-interaction binary
+          
+
+          
+            
+            <img src="_static/varsha.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="massive_binaries.html">MESA&#64;Konkoly – Massive Binaries</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html#">Modeling a post-interaction binary</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html#">Docs</a> &raquo;</li>
+      
+    <li>Modeling a post-interaction binary</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <script type="text/javascript">
+    window.location.href = "massive_binaries.html";
+</script><div class="section" id="modeling-a-post-interaction-binary">
+<h1>Modeling a post-interaction binary<a class="headerlink" href="index.html#modeling-a-post-interaction-binary" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="massive_binaries.html">MESA&#64;Konkoly – Massive Binaries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="massive_binaries.html#introduction">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#overview-of-the-binary-work-directory-and-inlists">Overview of the binary work directory and inlists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#binary-inlists">Binary inlists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#the-src-folder">The src folder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#running-a-binary-model">Running a binary model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#restarting-a-binary-model">Restarting a Binary Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#pgstar">pgstar</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="massive_binaries.html#minilab-1-stable-mass-transfer-evolution">Minilab 1: Stable Mass Transfer Evolution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#producing-a-stripped-star-binary">Producing a Stripped Star Binary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#customizing-run-binary-extras">Customizing <code class="docutils literal notranslate"><span class="pre">run_binary_extras</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#extra-exploring-uncertainties-in-the-envelope-stripping">Extra – Exploring Uncertainties in the Envelope Stripping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#solutions">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="massive_binaries.html#minilab-2-midilab-the-efficiency-of-mass-transfer">Minilab 2 (“Midilab”): The Efficiency of Mass Transfer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#calibrating-the-efficiency-of-mass-transfer-to-an-observed-system">Calibrating the Efficiency of Mass Transfer to an Observed System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#varying-the-mass-transfer-efficiency">Varying the Mass Transfer Efficiency</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#some-questions-to-discuss-while-the-new-models-are-running">Some Questions to Discuss While the New Models are Running</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#what-might-limit-the-mass-transfer">What Might Limit the Mass-Transfer?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#ad-hoc-model-1-angular-momentum-and-critical-rotation">Ad hoc Model 1: Angular Momentum and Critical Rotation</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="massive_binaries.html#ad-hoc-model-1-painted-on-critical-rotation">Ad hoc Model 1: “Painted-on” Critical Rotation:</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#implementation">Implementation</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="massive_binaries.html#checkpoint-0-initialize-a-global-variable-to-store-the-angular-momentum-accreted">Checkpoint 0: Initialize a Global Variable to Store the Angular Momentum Accreted</a></li>
+<li class="toctree-l5"><a class="reference internal" href="massive_binaries.html#checkpoint-1-calculate-am-accreted-in-extras-binary-finish-step">Checkpoint 1: Calculate AM accreted in <code class="docutils literal notranslate"><span class="pre">extras_binary_finish_step</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="massive_binaries.html#checkpoint-2-estimate-the-rotation-rate"><strong>Checkpoint 2: Estimate the rotation rate</strong></a></li>
+<li class="toctree-l5"><a class="reference internal" href="massive_binaries.html#checkpoint-3-calculate-the-critical-rotation">Checkpoint 3: Calculate the critical rotation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="massive_binaries.html#checkpoint-4-stop-if-the-rotation-rate-is-faster-than-critical-rotation">Checkpoint 4: Stop if the rotation rate is faster than critical rotation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="massive_binaries.html#run-mesa-binary-with-ad-hoc-model-1-implemented">Run MESA binary with Ad Hoc Model 1 implemented!</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#bonus-task-ad-hoc-model-2-thermal-timescale-limited-accretion">BONUS TASK: Ad hoc model 2: Thermal Timescale-limited accretion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#sec-adhocsoln">Solutions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="massive_binaries.html#maxilab-towards-the-x-ray-binary-stage">Maxilab: Towards the X-ray binary stage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#id8">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#core-collapse-of-the-primary-and-formation-of-a-ns">Core-collapse of the primary and formation of a NS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#future-evolution-of-the-system-towards-an-x-ray-binary-and-a-common-envelope-phase">Future evolution of the system: towards an X-ray binary and a common-envelope phase</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#step-1-set-the-starting-conditions-and-set-the-primary-star-as-a-point-mass"><strong>Step 1: Set the starting conditions and set the primary star as a point mass</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#step-2-determining-the-start-of-the-common-envelope-phase"><strong>Step 2: Determining the start of the common-envelope phase</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#estimating-the-outcome-of-ce-evolution">Estimating the outcome of CE evolution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#step-1-computing-the-envelope-binding-energy">Step 1: computing the envelope binding energy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#step-2-computing-the-post-ce-orbital-separation-a-rm-fin-required-to-unbind-the-envelope">Step 2: computing the post-CE orbital separation <span class="math notranslate nohighlight">\(a_{\rm fin}\)</span> required to unbind the envelope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="massive_binaries.html#step-3-check-whether-the-donor-fits-inside-its-roche-lobe-in-the-post-ce-orbit">Step 3: check whether the donor fits inside its Roche-lobe in the post-CE orbit</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="massive_binaries.html#id17">Solutions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="index.html#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="https://wwwmpa.mpa-garching.mpg.de/~jklencki/html/py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="massive_binaries.html" class="btn btn-neutral float-right" title="MESA@Konkoly – Massive Binaries" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, Jakub Klencki.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="_static/custom.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
