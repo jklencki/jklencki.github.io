@@ -1,0 +1,100 @@
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdown > * {
+    display: none;
+}
+
+.dropdown.details-open > * {
+    display: block;
+}
+
+
+details {
+  border: 2px solid #666; /* Thicker, darker border */
+  border-radius: 4px;
+  padding: .625em .625em .625em 2em;
+  margin-bottom: 1em;
+}
+
+details > summary {
+  font-weight: bold;
+  margin-bottom: 1em; /* Space below "Hint" */
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.answer-dropdown {
+    cursor: pointer;
+    border: 2px solid #007acc;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f0f9ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, shadow color */
+}
+
+.answer-dropdown > * {
+    display: none;
+}
+
+.answer-dropdown.details-open > * {
+    display: block;
+}
+
+.answer-dropdown > summary {
+    font-weight: bold;
+    margin: -15px -15px 10px -15px;
+    padding: 15px;
+    background-color: #007acc;
+    color: #ffffff;
+    border-radius: 4px; /* Rounded corners */
+    outline: none; /* Remove browser default focus outline */
+}
+
+.answer-dropdown > summary:hover {
+    background-color: #005bb5; /* Darker color when hovered */
+}
+
+.answer-dropdown > summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hide the permalink next to the equation */
+.math .headerlink {
+    display: none;
+}
+
+/* If there's weird spacing or alignment, you can adjust as follows */
+.math {
+    text-align: center;
+    /* Adjust margin, padding, etc. as desired */
+}
+
+
+.hint-content {
+    display: none;
+    border: 1px solid #d0d0d0;
+    padding: 1em;
+    background-color: #f9f9f9;
+}
+
+.reveal-hint {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #007ACC;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1em;
+}
